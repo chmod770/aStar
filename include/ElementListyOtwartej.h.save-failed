@@ -1,0 +1,65 @@
+#ifndef ELEMENTLISTYOTWARTEJ_H
+#define ELEMENTLISTYOTWARTEJ_H
+#include<iostream>
+#include <cmath>
+#include "ElementListyOtwartej.h"
+
+class ElementListyOtwartej
+{
+    public:
+        ElementListyOtwartej(int x,int y,int g,int rodzic_x,int rodzic_y,int cel_x,int cel_y);
+        void Wypisz();
+        int x;
+        int y;
+        int g;
+        int rodzic_x;
+        int rodzic_y;
+        double h;
+        int cel_x;
+        int cel_y;
+        double f;
+        bool czyJestemCelem()
+        {
+            if(this->x == this->cel_x && this->y==cel_y)
+                return true;
+            return false;
+        }
+        bool operator==( ElementListyOtwartej & drugiElement)
+        {
+            if((this->get_x()==drugiElement.get_x()) && (this->get_y() == drugiElement.get_y()) )
+                return true;
+            return false;
+        }
+        bool operator<( ElementListyOtwartej & drugiElement)
+        {
+            if(this->get_f()<drugiElement.get_f())
+                return true;
+            return false;
+        }
+
+
+};
+
+#endif // ELEMENTLISTYOTWARTEJ_H
+
+#include<iostream>
+#include <cmath>
+
+ElementListyOtwartej::ElementListyOtwartej(int x,int y,int g,int rodzic_x,int rodzic_y,int cel_x,int cel_y)
+{
+    this->x=x;
+    this->y=y;
+    this->g=g;
+    this->rodzic_x=rodzic_x;
+    this->rodzic_y=rodzic_y;
+    this->h=fabs(cel_x-x)+fabs(cel_y-y);
+    //this->h=sqrt(((x-cel_x)*(x-cel_x)+(y-cel_y)*(y-cel_y)));
+    this->cel_x=cel_x;
+    this->cel_y=cel_y;
+    this->f = this->g + this->h;
+}
+
+void ElementListyOtwartej::Wypisz(void)
+{
+    std::cout<<"\npole:x:"<<x<<", y:"<<y<<"\ng:"<<g<<"\nrodzic_x:"<<rodzic_x<<"\nrodzic_y:"<<rodzic_y<<"\nh:"<<h<<"\nf: "<<f<<'\n';
+}

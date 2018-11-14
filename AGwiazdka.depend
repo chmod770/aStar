@@ -1,0 +1,58 @@
+# depslib dependency file v1.0
+1490176832 source:c:\users\viktoria\desktop\studia\semestr 6\robotyka\los2\agwiazdka-final\main.cpp
+	<iostream>
+	<vector>
+	<cstdlib>
+	"ElementListyOtwartej.h"
+	"Macierz.h"
+	<algorithm>
+
+1490177045 c:\users\viktoria\desktop\studia\semestr 6\robotyka\los2\agwiazdka-final\include\elementlistyotwartej.h
+
+1490174425 c:\users\viktoria\desktop\studia\semestr 6\robotyka\los2\agwiazdka-final\include\macierz.h
+	<iostream>
+	<vector>
+	"ElementListyOtwartej.h"
+	<windows.h>
+
+1490174573 source:c:\users\viktoria\desktop\studia\semestr 6\robotyka\los2\agwiazdka-final\src\elementlistyotwartej.cpp
+	<iostream>
+	<cmath>
+	"ElementListyOtwartej.h"
+
+1490172146 source:c:\users\viktoria\desktop\studia\semestr 6\robotyka\los2\agwiazdka-final\src\macierz.cpp
+	<string>
+	<fstream>
+	<iostream>
+	"Macierz.h"
+
+1496669000 source:c:\users\lumi\desktop\nowy folder (2)\main.cpp
+	<iostream>
+	<vector>
+	<cstdlib>
+	"ElementListyOtwartej.h"
+	"Macierz.h"
+	<algorithm>
+
+1496668476 c:\users\lumi\desktop\nowy folder (2)\include\elementlistyotwartej.h
+	<iostream>
+	<cmath>
+	"ElementListyOtwartej.h"
+
+1496668562 c:\users\lumi\desktop\nowy folder (2)\include\macierz.h
+	<iostream>
+	<vector>
+	"ElementListyOtwartej.h"
+	<windows.h>
+
+1496667343 source:c:\users\lumi\desktop\nowy folder (2)\src\elementlistyotwartej.cpp
+	<iostream>
+	<cmath>
+	"ElementListyOtwartej.h"
+
+1490175746 source:c:\users\lumi\desktop\nowy folder (2)\src\macierz.cpp
+	<string>
+	<fstream>
+	<iostream>
+	"Macierz.h"
+
